@@ -1,0 +1,24 @@
+.news {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 5px;
+
+	&__title {
+		position: absolute;
+		top: 1px;
+		left: 16px;
+		display: inline;
+		padding: 15px;
+		border-radius: 4px 0 0 4px;
+		background-color: #e7e7e7;
+		text-transform: uppercase;
+	}
+	&__info {
+		display: block;
+		padding: 15px;
+		padding-left: 80px;
+		border: 1px solid;
+		border-radius: 4px;
+		margin-bottom: 0;
+	}
+}

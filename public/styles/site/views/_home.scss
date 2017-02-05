@@ -1,0 +1,19 @@
+.home {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	
+	&__card {
+		padding: 20px !important;
+		width: calc(100% / 3 - 10px);
+		margin: 5px;
+
+		@media (max-width: 991px) {
+			width: calc(100% / 2 - 10px);
+		}
+
+		@media (max-width: 767px) {
+			width: calc(100% - 10px);
+		}
+	}
+}

@@ -5821,16 +5821,302 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html {
+  font-size: 62.5%; }
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
+
 #header {
-  margin-top: 30px; }
+  margin-top: 10px; }
 
 #footer {
-  margin-top: 30px;
   border-top: 1px solid #eeeeee;
-  padding-top: 30px;
+  padding-top: 10px;
+  margin-top: 5px;
   color: #777777; }
+
+.jumbotron {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .gallery-image img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.banner {
+  margin-top: 10px;
+  border: 1px solid;
+  padding-top: 15px;
+  padding-bottom: 5px; }
+  .banner__title {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase; }
+    .banner__title--capitalize {
+      font-size: 3rem; }
+  .banner__images {
+    display: flex;
+    flex-wrap: wrap; }
+    .banner__images_logo {
+      display: block;
+      padding: 5px 0;
+      margin: 0 auto; }
+      @media (max-width: 767px) {
+        .banner__images_logo {
+          margin: 0 auto; } }
+      .banner__images_logo .logo__media {
+        display: inline-block;
+        width: 180px; }
+    .banner__images_frise {
+      flex: 1;
+      display: inline-block;
+      height: 70px; }
+      @media (max-width: 767px) {
+        .banner__images_frise {
+          display: none; } }
+
+.footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+  .footer__links {
+    text-align: center;
+    text-transform: uppercase; }
+
+.news {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+  .news__title {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    display: inline;
+    padding: 15px;
+    border-radius: 4px 0 0 4px;
+    background-color: #e7e7e7;
+    text-transform: uppercase; }
+  .news__info {
+    display: block;
+    padding: 15px;
+    padding-left: 80px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 0; }
+
+.menu {
+  margin-bottom: 0; }
+
+.nav__item {
+  text-transform: uppercase; }
+
+.navbar-toggle {
+  float: left !important;
+  margin-left: 15px !important; }
+
+.navbar-header__frise {
+  float: right;
+  display: inline-block;
+  height: 50px; }
+  @media (max-width: 582px) {
+    .navbar-header__frise {
+      display: none; } }
+  @media (min-width: 768px) {
+    .navbar-header__frise {
+      display: none; } }
+
+.welcome {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .welcome__title {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .welcome__content {
+    flex: 1;
+    margin-top: 20px; }
+    .welcome__content_edito {
+      font-size: 1.4rem !important; }
+  .welcome__links_wrapper {
+    display: flex;
+    margin: 0;
+    list-style: none; }
+  .welcome__links_item {
+    width: 50%; }
+
+.links {
+  position: relative;
+  padding-left: 35px;
+  text-transform: uppercase; }
+  .links--fb::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("http://placehold.it/25x25");
+    position: absolute;
+    top: -4px; }
+  .links--doc::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("http://placehold.it/25x25");
+    position: absolute;
+    top: -4px; }
+
+.members {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .members__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+  .members__content {
+    flex: 1;
+    margin: 20px 0; }
+    .members__content_infos {
+      display: flex; }
+    .members__content_job {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 1.4rem !important;
+      font-weight: bold !important; }
+    .members__content_details {
+      font-size: 1.4rem !important; }
+      .members__content_details--title {
+        font-weight: bold;
+        text-transform: uppercase; }
+  .members__footer {
+    text-align: center; }
+    .members__footer_link {
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+  .members__avatar {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px; }
+    .members__avatar_wrapper {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  .members__infos {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+    .members__infos_name {
+      text-align: center; }
+    .members__infos_firstname {
+      font-size: 1.4rem !important;
+      font-weight: bold !important;
+      margin-bottom: 0 !important; }
+    .members__infos_surname {
+      font-size: 1.4rem !important;
+      margin-bottom: 0 !important; }
+    .members__infos_links {
+      align-items: center;
+      flex: 1;
+      display: flex;
+      list-style: none; }
+    .members__infos_link {
+      position: relative;
+      text-align: center;
+      width: calc(100% / 3); }
+      .members__infos_link a {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-image: url("http://placehold.it/25x25");
+        margin: 0 auto; }
+
+.advertisement {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .advertisement__title_primary {
+    font-size: 1.6rem !important;
+    text-align: center;
+    font-weight: bold !important;
+    margin-bottom: 0 !important;
+    text-transform: uppercase; }
+  .advertisement__title_secondary {
+    font-size: 1.4rem !important;
+    text-align: center; }
+  .advertisement__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px; }
+    .advertisement__content_publication {
+      font-size: 1.2rem !important;
+      text-align: center;
+      font-style: italic !important; }
+    .advertisement__content_contact {
+      font-size: 1.4rem !important;
+      text-align: center; }
+      .advertisement__content_contact--title {
+        font-weight: bold !important;
+        text-transform: uppercase; }
+    .advertisement__content_edito {
+      flex: 1;
+      font-size: 1.4rem !important; }
+    .advertisement__content_images {
+      display: flex;
+      list-style: none;
+      width: 100%;
+      justify-content: space-around; }
+  .advertisement__footer {
+    text-align: center; }
+    .advertisement__footer_link {
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+
+.more {
+  height: 100%;
+  display: flex;
+  margin-top: 40px; }
+  .more__link {
+    margin: auto;
+    position: relative;
+    font-size: 2.4rem !important;
+    text-align: center;
+    font-weight: bold !important;
+    text-transform: uppercase; }
+    .more__link::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-image: url("http://placehold.it/60x60");
+      position: absolute;
+      left: calc(50% - 30px);
+      top: -70px; }
+
+.home {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch; }
+  .home__card {
+    padding: 20px !important;
+    width: calc(100% / 3 - 10px);
+    margin: 5px; }
+    @media (max-width: 991px) {
+      .home__card {
+        width: calc(100% / 2 - 10px); } }
+    @media (max-width: 767px) {
+      .home__card {
+        width: calc(100% - 10px); } }

@@ -1,0 +1,59 @@
+.advertisement{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		&_primary {
+			font-size: 1.6rem !important;
+			text-align: center;
+			font-weight: bold !important;
+			margin-bottom: 0 !important;
+			text-transform: uppercase;
+		}
+		&_secondary {
+			font-size: 1.4rem !important;
+			text-align: center;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		margin-bottom: 20px;
+		&_publication {
+			font-size: 1.2rem !important;
+			text-align: center;
+			font-style: italic !important;
+		}
+		&_contact {
+			font-size: 1.4rem !important;
+			text-align: center;
+			&--title {
+				font-weight: bold !important;
+				text-transform: uppercase;
+			}
+		}
+		&_edito {
+			flex: 1;
+			font-size: 1.4rem !important;
+		}
+		&_images {
+			display: flex;
+			list-style: none;
+			width: 100%;
+			justify-content: space-around;
+		}
+	}
+	&__image {
+		&_wrapper {
+		}
+	}
+	&__footer {
+		text-align: center;
+		&_link {
+			font-size: 1.4rem;
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.members{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	&__title {
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__content {
+		flex: 1;
+		margin: 20px 0;
+		&_infos {
+			display: flex;
+		}
+		&_job {
+			margin-top: 15px;
+			text-align: center;
+			font-size: 1.4rem !important;
+			font-weight: bold !important;
+		}
+		&_details {
+			font-size: 1.4rem !important;
+			&--title {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__footer {
+		text-align: center;
+		&_link {
+			font-size: 1.4rem;
+			text-transform: uppercase;
+		}
+	}
+	&__avatar {
+		display: block;
+		margin: 0 auto;
+		width: 120px;
+		height: 120px;
+		&_wrapper {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&__infos {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		&_name {
+			text-align: center;
+		}
+		&_firstname {
+			font-size: 1.4rem !important;
+			font-weight: bold !important;
+			margin-bottom: 0 !important;
+		}
+		&_surname {
+			font-size: 1.4rem !important;
+			margin-bottom: 0 !important;
+		}
+		&_links {
+			align-items: center;
+			flex: 1;
+			display: flex;
+			list-style: none;
+		}
+		&_link {
+			position: relative;
+			text-align: center;
+			width: calc(100% / 3);
+
+			a {
+				display: block;
+				width: 25px;
+				height: 25px;
+				background-image: url('http://placehold.it/25x25');
+				margin: 0 auto;
+			}
+		}
+	}
+}

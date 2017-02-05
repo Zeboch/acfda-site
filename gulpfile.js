@@ -1,24 +1,35 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
-var shell = require('gulp-shell')
-
+var shell = require('gulp-shell');
 var sass = require('gulp-sass');
 
-
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json']
-
-,
+	'src': [
+		'./models/**/*.js',
+		'./routes/**/*.js',
+		'keystone.js',
+		'package.json'
+	],
 	'style': {
 		all: './public/styles/**/*.scss',
 		output: './public/styles/'
+	},
+	'templates': {
+		all: './templates/**/*.html',
+	},
+	'routes': {
+		all: './routes/**/*.js',
 	}
-
 };
-
 
 gulp.task('watch:sass', function () {
 	gulp.watch(paths.style.all, ['sass']);
+});
+gulp.task('watch:templates', function () {
+	gulp.watch(paths.templates.all, ['runKeystone']);
+});
+gulp.task('watch:routes', function () {
+	gulp.watch(paths.routes.all, ['runKeystone']);
 });
 
 gulp.task('sass', function(){
@@ -27,12 +38,12 @@ gulp.task('sass', function(){
 		.pipe(gulp.dest(paths.style.output));
 });
 
-
 gulp.task('runKeystone', shell.task('node keystone.js'));
+
 gulp.task('watch', [
-
   'watch:sass',
-
+  'watch:templates',
+  'watch:routes'
 ]);
 
 gulp.task('default', ['watch', 'runKeystone']);

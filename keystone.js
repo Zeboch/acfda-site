@@ -30,6 +30,14 @@ keystone.init({
 	'user model': 'User',
 });
 
+// Cloudinary Setup
+keystone.set('cloudinary config', {
+	cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+	api_key: process.env.CLOUDINARY_API_KEY,
+	api_secret: process.env.CLOUDINARY_API_SECRET
+});
+keystone.set('cloudinary folders', true);
+
 // Load your project's Models
 keystone.import('models');
 
@@ -69,8 +77,8 @@ keystone.set('email tests', require('./routes/emails'));
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
-	enquiries: 'enquiries',
-	users: 'users',
+	members: 'members',
+	advertisements: 'advertisements'
 });
 
 // Start Keystone to connect to your database and initialise the web server

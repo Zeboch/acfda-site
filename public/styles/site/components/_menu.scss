@@ -1,0 +1,24 @@
+.menu {
+	margin-bottom: 0;
+}
+
+.nav__item {
+	text-transform: uppercase;
+}
+
+.navbar-toggle {
+	float: left !important;
+	margin-left: 15px !important;
+}
+
+.navbar-header__frise {
+	float: right;
+	display: inline-block;
+	height: 50px;
+	@media (max-width: 582px){
+		display: none;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+}

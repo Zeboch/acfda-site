@@ -1,0 +1,23 @@
+.more {
+	height: 100%;
+	display: flex;
+	margin-top: 40px;
+	&__link {
+		margin: auto;
+		position: relative;
+		font-size: 2.4rem !important;
+		text-align: center;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		&::after {
+			content: '';
+			display: block;
+			width: 60px;
+			height: 60px;
+			background-image: url('http://placehold.it/60x60');
+			position: absolute;
+			left: calc(50% - 30px);
+			top: -70px;
+		}
+	}
+}

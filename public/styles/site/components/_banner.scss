@@ -1,0 +1,41 @@
+.banner {
+	margin-top: 10px;
+	border: 1px solid;
+	padding-top: 15px;
+	padding-bottom: 5px;
+
+	&__title {
+		width: 100%;
+		font-size: 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		&--capitalize {
+			font-size: 3rem;
+		}
+	}
+
+	&__images {
+		display: flex;
+		flex-wrap: wrap;
+		&_logo {
+			display: block;
+			padding: 5px 0;
+			margin: 0 auto;
+			@media (max-width: 767px) {
+				margin: 0 auto;
+			}
+			.logo__media {
+				display: inline-block;
+				width: 180px;
+			}
+		}
+		&_frise {
+			flex: 1;
+			display: inline-block;
+			height: 70px;
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+}
