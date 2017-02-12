@@ -1,14 +1,32 @@
 .menu {
 	margin-bottom: 0;
+	background-color: color("materialize-red", "base");
+	border: 0 !important;
 }
 
 .nav__item {
 	text-transform: uppercase;
+	color: $color-white !important;
+	background: none !important;
+	
+	&_wrapper {
+		transition: background ease 0.4s;
+		&.active {
+			background-color: $color_grey_darken-4;
+		}
+		&:hover, &:focus {
+			background-color: $color_grey_darken-3;
+		}
+	}
 }
 
 .navbar-toggle {
 	float: left !important;
 	margin-left: 15px !important;
+	
+	&:hover, &:focus {
+		background-color: $color_grey_darken-3 !important;
+	}
 }
 
 .navbar-header__frise {
@@ -21,4 +39,8 @@
 	@media (min-width: 768px) {
 		display: none;
 	}
+}
+
+.icon-bar {
+	background-color: $color-white !important;
 }

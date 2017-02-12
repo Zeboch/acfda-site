@@ -4,6 +4,7 @@
 	flex-direction: column;
 
 	&__title {
+		padding: 20px 20px 10px;
 		&_primary {
 			font-size: 1.6rem !important;
 			text-align: center;
@@ -14,12 +15,14 @@
 		&_secondary {
 			font-size: 1.4rem !important;
 			text-align: center;
+			margin: 0 !important;
 		}
 	}
 	&__content {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
+		justify-content: center;
 		margin-bottom: 20px;
 		&_publication {
 			font-size: 1.2rem !important;
@@ -29,12 +32,15 @@
 		&_contact {
 			font-size: 1.4rem !important;
 			text-align: center;
+			color: $color-white;
+			background-color: color("materialize-red", "base");
 			&--title {
 				font-weight: bold !important;
 				text-transform: uppercase;
 			}
 		}
 		&_edito {
+			padding: 0 20px;
 			flex: 1;
 			font-size: 1.4rem !important;
 		}
@@ -47,13 +53,28 @@
 	}
 	&__image {
 		&_wrapper {
+			cursor: pointer;
+			cursor: hand;
+			width: 70px;
+			height: 100px;
+			border-radius: 2px;
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
 		}
 	}
 	&__footer {
 		text-align: center;
+		padding: 0 20px 10px;
 		&_link {
 			font-size: 1.4rem;
 			text-transform: uppercase;
 		}
 	}
+}
+
+.materialboxed.initialized.active {
+	max-width: none !important;
 }

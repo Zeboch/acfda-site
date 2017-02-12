@@ -2,9 +2,12 @@
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
+	color: $color-black;
 	
 	&__card {
-		padding: 20px !important;
+		border-radius: 2px !important;
+		background-color: $color-white !important;
+		padding: 0 !important;
 		width: calc(100% / 3 - 10px);
 		margin: 5px;
 

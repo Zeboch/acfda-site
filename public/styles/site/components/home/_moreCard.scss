@@ -1,7 +1,6 @@
 .more {
 	height: 100%;
 	display: flex;
-	margin-top: 40px;
 	&__link {
 		margin: auto;
 		position: relative;
@@ -9,15 +8,17 @@
 		text-align: center;
 		font-weight: bold !important;
 		text-transform: uppercase;
+		padding-left: 65px;
 		&::after {
-			content: '';
+			font-family: $font-material-icons;
+			font-size: 40px;
+			content: '\e148';
 			display: block;
-			width: 60px;
-			height: 60px;
-			background-image: url('http://placehold.it/60x60');
+			width: 54px;
+			height: 54px;
 			position: absolute;
-			left: calc(50% - 30px);
-			top: -70px;
+			left: 7px;
+			top: 0;
 		}
 	}
 }

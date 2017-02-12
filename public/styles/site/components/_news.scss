@@ -12,13 +12,40 @@
 		border-radius: 4px 0 0 4px;
 		background-color: #e7e7e7;
 		text-transform: uppercase;
+		height: calc(100% - 2px);
 	}
 	&__info {
 		display: block;
-		padding: 15px;
-		padding-left: 80px;
-		border: 1px solid;
+		padding: 15px 90px 15px 80px;
 		border-radius: 4px;
 		margin-bottom: 0;
+		background-color: $color_grey_darken-4;
+	}
+	&__nav {
+		position: absolute;
+		right: 20px;
+		top: 4px;
+		&_item {
+			&::after {
+				font-family: $font-material-icons;
+				font-size: 40px;
+				display: block;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: 1px;
+			}
+			&--previous {
+				&::after {
+					content: '\E314';
+					left: -1px;
+				}
+			}
+			&--next {
+				&::after {
+					content: '\E315';
+				}
+			}
+		}
 	}
 }

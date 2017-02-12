@@ -5,7 +5,17 @@
 	margin-bottom: 0;
 
 	&__links {
+		color: $color-white;
 		text-align: center;
 		text-transform: uppercase;
+		
+		&_item {
+			color: $color-white;
+			text-decoration: none;
+			&:hover, &:focus {
+				text-decoration: none;
+				color: $color-grey_darken-1;
+			}
+		}
 	}
 }
