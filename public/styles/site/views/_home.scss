@@ -9,6 +9,7 @@
 		background-color: $color-white !important;
 		padding: 0 !important;
 		width: calc(100% / 3 - 10px);
+		min-height: 100px;
 		margin: 5px;
 
 		@media (max-width: 991px) {

@@ -5,14 +5,13 @@
 
 	&__title {
 		position: absolute;
-		top: 1px;
-		left: 16px;
+		left: 15px;
 		display: inline;
 		padding: 15px;
 		border-radius: 4px 0 0 4px;
 		background-color: #e7e7e7;
 		text-transform: uppercase;
-		height: calc(100% - 2px);
+		height: 100%;
 	}
 	&__info {
 		display: block;
