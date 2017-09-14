@@ -1,73 +1,73 @@
-.welcome {
-	height: 100%;
+.welcome-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+	margin: 20px 20px 0;
+	font-family: $font-serif;
+	font-size: 1.6rem;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+
+  &__content {
+	flex: 1;
+	margin: 20px 20px 0;
 	display: flex;
 	flex-direction: column;
-	
-	&__title {
-		margin: 20px 20px 0;
-		font-size: 1.6rem;
-		text-align: center;
-		font-weight: bold;
-		text-transform: uppercase;
+	&_edito {
+	  font-size: 1.4rem !important;
 	}
+  }
 
-	&__content {
-		flex: 1;
-		margin: 20px 20px 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		&_edito {
-			font-size: 1.4rem !important;
-		}
+  &__links {
+	margin: 0 20px 10px;
+	&_wrapper {
+	  display: flex;
+	  justify-content: space-around;
+	  margin: 0;
+	  list-style: none;
 	}
+	&_item {
 
-	&__links {
-		margin: 0 20px 10px;
-		&_wrapper {
-			display: flex;
-			justify-content: space-around;
-			margin: 0;
-			list-style: none;
-		}
-		&_item {
-			
-		}
 	}
+  }
 }
 
 .links {
-	position: relative;
-	padding-left: 45px;
-	text-transform: uppercase;	
-	&--fb {
-		&:hover, &:focus {
-			&::after {
-				background-image: url('../../../../images/facebook_hover.svg');
-			}
-		}
-		&::after {
-			content: '';
-			display: block;
-			width: 30px;
-			height: 30px;
-			background-image: url('../../../../images/facebook.svg');
-			position: absolute;
-			top: 3px;
-			left: 8px;
-		}
+  position: relative;
+  padding-left: 45px;
+  text-transform: uppercase;
+  &--fb {
+	&:hover, &:focus {
+	  &::after {
+		background-image: url('../../../../images/facebook_hover.svg');
+	  }
 	}
-	&--doc {
-		&::after {
-			font-family: $font-material-icons;
-			font-size: 30px;
-			content: '\e431';
-			display: block;
-			width: 25px;
-			height: 25px;
-			position: absolute;
-			top: 0;
-			left: 8px;
-		}
+	&::after {
+	  content: '';
+	  display: block;
+	  width: 30px;
+	  height: 30px;
+	  background-image: url('../../../../images/facebook.svg');
+	  position: absolute;
+	  top: 3px;
+	  left: 8px;
 	}
+  }
+  &--doc {
+	&::after {
+	  font-family: $font-material-icons;
+	  font-size: 30px;
+	  content: '\e431';
+	  display: block;
+	  width: 25px;
+	  height: 25px;
+	  position: absolute;
+	  top: 0;
+	  left: 8px;
+	}
+  }
 }

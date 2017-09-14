@@ -12,6 +12,7 @@
 
 		{# Customise the stylesheet for your site by editing /public/styles/site.sass #}
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i,700" rel="stylesheet">
 		<link href="/styles/site.css" rel="stylesheet">
 
 		{# This file provides the default styling for the KeystoneJS Content Editor #}
@@ -40,7 +41,7 @@
 				<img class="banner__logo_media" src="images/logoACFDA.png"/>
 			</a>
 			<img class="banner__frise" src="images/bannerACFDA.png"/>
-			<h1 class="banner__title"><span class="banner__title--capitalize">A</span>ssociation des <span class="banner__title--capitalize">C</span>hargés de <span class="banner__title--capitalize">F</span>iguration et de <span class="banner__title--capitalize">D</span>istribution <span class="banner__title--capitalize">A</span>rtistique</h1>
+			<h1 class="banner__title"><span class="banner__title--capitalize">A</span>ssociation&nbsp;des&nbsp;<span class="banner__title--capitalize">C</span>hargés&nbsp;de&nbsp;<span class="banner__title--capitalize">F</span>iguration et&nbsp;de&nbsp;<span class="banner__title--capitalize">D</span>istribution&nbsp;<span class="banner__title--capitalize">A</span>rtistique</h1>
 		</header>
 		{% endblock %}
 
@@ -63,8 +64,8 @@
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-left">
 							{% for link in navLinks %}
-								<li class="nav__item_wrapper {{ 'active' if link.key == section else '' }}">
-									<a class="waves-effect waves-light nav__item nav__item--{{link.key}}" href="{{ link.href }}">{{ link.label }}</a>
+								<li class="nav__item_wrapper">
+									<a class="waves-effect waves-light nav__item nav__item--{{link.key}} {{ 'nav__item--active' if link.key == section else '' }}" href="{{ link.href }}">{{ link.label }}</a>
 								</li>
 							{% endfor %}
 						</ul>
@@ -83,14 +84,16 @@
 			</nav>
 		</div>
 
+		<!--
 		<div class="container news">
-			<p class="news__title materialize-red">News</p><!--
-			--><p class="news__info">Brave particles, to the parallel universe. Make it so, history! Alarm at the colony that is when bare emitters harvest.</p><!--
-			--><div class="news__nav">
-				<button class="btn-floating btn waves-effect waves-light materialize-red news__nav_item news__nav_item--previous"><span class="text-hide">Previous</span></button>
-				<button class="btn-floating btn waves-effect waves-light materialize-red news__nav_item news__nav_item--next"><span class="text-hide">Next</span></button>
+			<p class="news__title materialize-red">News</p>&lt;!&ndash;
+			&ndash;&gt;<p class="news__info">Brave particles, to the parallel universe. Make it so, history! Alarm at the colony that is when bare emitters harvest.</p>&lt;!&ndash;
+			&ndash;&gt;<div class="news__nav">
+				<button class="btn-floating btn waves-effect waves-light materialize-red news__nav_item news__nav_item&#45;&#45;previous"><span class="text-hide">Previous</span></button>
+				<button class="btn-floating btn waves-effect waves-light materialize-red news__nav_item news__nav_item&#45;&#45;next"><span class="text-hide">Next</span></button>
 			</div>
 		</div>
+		-->
 
 		{# BODY #}
 		<main id="body">

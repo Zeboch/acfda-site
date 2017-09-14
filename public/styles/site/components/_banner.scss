@@ -1,42 +1,44 @@
 .banner {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-top: 5px;
-	padding-top: 15px;
-	height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  padding-top: 15px;
+  height: 130px;
 
-	@media (max-width: 991px) {
-		height: auto;
+  @media (max-width: 991px) {
+	height: auto;
+  }
+
+  &__logo {
+	width: 230px;
+	&_media {
+	  display: block;
+	  height: 75px;
 	}
-	
-	&__logo {
-		width: 230px;
-		&_media {
-			display: block;
-			height: 75px;
-		}
+  }
+
+  &__frise {
+	display: block;
+	margin: 0 auto;
+	height: 75px;
+
+	@media (max-width: 767px) {
+	  display: none;
 	}
-	
-	&__frise {
-		display: block;
-		margin: 0 auto;
-		height: 75px;
-		
-		@media (max-width: 767px) {
-			display: none;
-		}
+  }
+
+  &__title {
+	color: color("shades", "black");
+	margin: 10px 0;
+	font-family: $font-serif;
+	font-size: 1.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	&--capitalize {
+	  font-size: 2rem;
 	}
-	
-	&__title {
-		margin: 10px 0;
-		font-size: 1.6rem;
-		text-align: center;
-		text-transform: uppercase;
-		&--capitalize {
-			font-size: 2rem;
-		}
-	}
+  }
 }

@@ -1,10 +1,14 @@
+* {
+  font-family: $font-sans-serif;
+}
+
 html {
 	font-size: 62.5%;
 }
 
 body {
-	color: $color-white;
-	background-color: $color-grey_darken-1;
+	//color: $color-white;
+	//background-color: $color-grey_darken-1;
 }
 ul {
 	-webkit-margin-before: 0;
@@ -29,4 +33,8 @@ ul {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.btn, .btn-large {
+  font-family: $font-serif !important;
 }

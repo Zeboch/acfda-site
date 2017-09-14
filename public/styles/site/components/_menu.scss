@@ -1,46 +1,64 @@
 .menu {
-	margin-bottom: 0;
-	background-color: color("materialize-red", "base");
-	border: 0 !important;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0 !important;
 }
 
 .nav__item {
-	text-transform: uppercase;
-	color: $color-white !important;
-	background: none !important;
-	
-	&_wrapper {
-		transition: background ease 0.4s;
-		&.active {
-			background-color: $color_grey_darken-4;
-		}
-		&:hover, &:focus {
-			background-color: $color_grey_darken-3;
-		}
+  position: relative;
+  font-family: $font-serif;
+  text-transform: uppercase;
+  color: color("shades", "black") !important;
+  background: transparent !important;
+
+  &::after {
+	position: absolute;
+	bottom: 8px;
+	left: 5px;
+	background-color: color("materialize-red", "darken-1");
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	transition: height ease 0.25s, width ease 0.25s;
+  }
+
+  &--active {
+	&::after {
+	  height: 3px;
+	  width: calc(100% - 10px);
 	}
+  }
+  &:hover, &:focus {
+	&::after {
+	  width: calc(100% - 10px);
+	}
+  }
 }
 
 .navbar-toggle {
-	float: left !important;
-	margin-left: 15px !important;
-	
-	&:hover, &:focus {
-		background-color: $color_grey_darken-3 !important;
-	}
+  float: left !important;
+  margin-left: 15px !important;
+  background-color: color('materialize-red', 'base') !important;
+  transition: background-color ease 0.3s;
+
+  &:hover, &:focus {
+	background-color: $color_grey_darken-3 !important;
+  }
 }
 
 .navbar-header__frise {
-	float: right;
-	display: inline-block;
-	height: 50px;
-	@media (max-width: 582px){
-		display: none;
-	}
-	@media (min-width: 768px) {
-		display: none;
-	}
+  float: right;
+  display: inline-block;
+  height: 50px;
+  @media (max-width: 582px){
+	display: none;
+  }
+  @media (min-width: 768px) {
+	display: none;
+  }
 }
 
 .icon-bar {
-	background-color: $color-white !important;
+  background-color: $color-white !important;
 }

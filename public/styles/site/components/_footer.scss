@@ -1,21 +1,22 @@
 .footer {
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
-	&__links {
-		color: $color-white;
-		text-align: center;
-		text-transform: uppercase;
-		
-		&_item {
-			color: $color-white;
-			text-decoration: none;
-			&:hover, &:focus {
-				text-decoration: none;
-				color: $color_grey_darken-4;
-			}
-		}
+  &__links {
+	color: $color-black;
+	text-align: center;
+	text-transform: uppercase;
+
+	&_item {
+	  color: $color-black;
+	  font-family: $font-serif;
+	  text-decoration: none;
+	  &:hover, &:focus {
+		text-decoration: none;
+		color: $color_grey_darken-4;
+	  }
 	}
+  }
 }

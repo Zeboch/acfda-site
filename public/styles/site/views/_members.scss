@@ -1,0 +1,23 @@
+.members {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	color: $color-black;
+	
+	&__card {
+		border-radius: 2px !important;
+		background-color: $color-white !important;
+		padding: 0 !important;
+		width: calc(100% / 3 - 10px);
+		min-height: 100px;
+		margin: 5px;
+
+		@media (max-width: 991px) {
+			width: calc(100% / 2 - 10px);
+		}
+
+		@media (max-width: 767px) {
+			width: calc(100% - 10px);
+		}
+	}
+}
